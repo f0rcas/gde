@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'RotondaWebRegular';
+  src: url('../font/RotonReg__W/RotonReg__W.eot');
+  src: url('../font/RotonReg__W/RotonReg__W.eot?#iefix') format('embedded-opentype'), url('../font/RotonReg__W/RotonReg__W.woff') format('woff'), url('../font/RotonReg__W/RotonReg__W.ttf') format('truetype'), url('../font/RotonReg__W/RotonReg__W.svg#RotondaWeb-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'RotondaWebRegular', sans-serif;
+  font-size: 1em;
   margin: 0;
 }
 a {
@@ -9,11 +17,6 @@ a {
   cursor: pointer;
 }
 .wrap {
-  max-width: 968px;
-  min-width: 740px;
-  padding: 10px;
-}
-nav {
   position: relative;
 }
 .f-nav {
@@ -31,17 +34,35 @@ nav {
   background-color: #3A3A43;
   height: 60px;
 }
-.layout {
+.page__container {
   position: relative;
+  max-width: 100%;
 }
-.content {
+.tabs-view {
+  max-width: 1280px;
+  min-width: 740px;
   margin: 0 auto;
 }
+.page__content {
+  border: 2px solid red;
+  margin-right: 256px;
+}
+.page__mainwrap {
+  width: auto;
+  padding: 24px 24px 64px;
+  border: 2px solid #ccc;
+}
 .sidebar {
-  width: 250px;
-  border: 1px solid red;
-  height: auto;
-  position: absolute;
+  float: right;
+  width: 256px;
+  min-width: 0;
+  padding: 0;
+  background: #ebebed;
   right: 0;
+  position: absolute;
+  margin: 0;
+  border-left: 1px solid #ccc;
+  z-index: 1;
   top: 0;
+  bottom: 0;
 }
