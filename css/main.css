@@ -50,10 +50,8 @@ a {
 .page__mainwrap {
   width: auto;
   padding: 24px 24px 64px;
-  border: 2px solid #ccc;
 }
 .sidebar {
-  float: right;
   width: 256px;
   min-width: 0;
   padding: 0;
