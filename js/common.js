@@ -12,3 +12,7 @@ $("document").ready(function($){
 	});
 
 });
+
+$("document").ready(function($) {
+  $('.other-stock__block_item').matchHeight();
+});
